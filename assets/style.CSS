@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  border-radius: 10px;
 }
 
 html,
@@ -14,7 +15,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background: linear-gradient(White, gray, black);
 }
 
 .wrapper {
@@ -39,7 +40,8 @@ header {
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
-  padding: 30px 40px;
+  padding: 30px 40px
+  
 }
 
 .card-header::after {
@@ -89,7 +91,7 @@ header {
 }
 
 button[disabled] {
-  cursor: default;
+  cursor: grab;
   background: #c0c7cf;
 }
 
