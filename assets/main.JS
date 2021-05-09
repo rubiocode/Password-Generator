@@ -65,14 +65,12 @@ function generatePassword() {
   //creating password
   randomizedPass=[];  
   //creating for loop for how many times the password lenght
-  console.log(allOptions);
-  for (i=0; i <passLength; i++){ 
+    for (i=0; i <passLength; i++){ 
       const randomCharacterSet= allOptions[myFunction(allOptions.length)]
-      console.log(randomCharacterSet);
+    
       const randomCharacter=randomCharacterSet[myFunction(randomCharacterSet.length)]
     randomizedPass.push(randomCharacter);
   }
-console.log(randomizedPass);
   return randomizedPass.join("");
 
   
@@ -89,3 +87,16 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
+//adding copy button
+
+const copy = document.getElementById("copy");
+
+copy.onclick= function () {
+  // select text to copy
+  password.select();
+
+  //copying password to clipboard
+  document.execCommand("copy");
+}

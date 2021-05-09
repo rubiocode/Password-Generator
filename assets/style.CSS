@@ -2,7 +2,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  border-radius: 10px;
 }
 
 html,
@@ -15,7 +14,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background: linear-gradient(White, gray, black);
+
 }
 
 .wrapper {
@@ -28,7 +27,18 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.btn:hover{
+  background-color: darkgrey;
+  color: black;
+}
+
+h2 {
+    text-align: center;
 }
 
 .card {
@@ -40,8 +50,7 @@ header {
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
-  padding: 30px 40px
-  
+  padding: 30px 40px;
 }
 
 .card-header::after {
@@ -49,6 +58,7 @@ header {
   display: block;
   width: 100%;
   background: #e7e9eb;
+  opacity: 10%;
   height: 2px;
 }
 
@@ -76,7 +86,7 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: gray;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
@@ -91,9 +101,10 @@ header {
 }
 
 button[disabled] {
-  cursor: grab;
+  cursor: default;
   background: #c0c7cf;
 }
+
 
 .float-right {
   float: right;
@@ -120,6 +131,31 @@ button[disabled] {
   overflow: hidden;
 }
 
+#media {
+  background: linear-gradient(51deg, #178996, #8e82f7, #c960c3);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 15s ease infinite;
+  -moz-animation: AnimationName 15s ease infinite;
+  animation: AnimationName 15s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 9%}
+  50%{background-position:100% 92%}
+  100%{background-position:0% 9%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 9%}
+  50%{background-position:100% 92%}
+  100%{background-position:0% 9%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 9%}
+  50%{background-position:100% 92%}
+  100%{background-position:0% 9%}
+}
+
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
@@ -137,3 +173,4 @@ button[disabled] {
     font-size: 0.8rem;
   }
 }
+
