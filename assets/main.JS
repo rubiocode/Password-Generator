@@ -101,11 +101,12 @@ copy.onclick= function () {
   document.execCommand("copy");
 }
 
+//making reset function for button
 const clear= document.getElementById("clear");
 
 
 clear.addEventListener ('click', function(){
-  
+  //leaving text value blank so the password erases
   password.value="";
     
   });
