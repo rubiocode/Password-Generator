@@ -3,6 +3,7 @@
 This _Password Generator_ is simple to use and convenient when trying to come up with complex passwords in an instant. 
 
 *DEPLOYED PAGE:* https://rubiocode.github.io/Password-Generator/index.HTML
+
 *GITHUB REPO:* https://github.com/rubiocode/Password-Generator.git
 
 First, the user must 'click' on the *Generate Password* button for the page to populate the series of prompts. These prompts have password criteria and they help the user make their password as easy to remember or as complex as they want it to be. Once the prompts are completed by the user a randomized password is populated specifically for the user using their prefer password criteria. 
