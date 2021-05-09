@@ -89,7 +89,7 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 
-//adding copy button
+//adding function to copy button
 
 const copy = document.getElementById("copy");
 
@@ -100,3 +100,12 @@ copy.onclick= function () {
   //copying password to clipboard
   document.execCommand("copy");
 }
+
+const clear= document.getElementById("clear");
+
+
+clear.addEventListener ('click', function(){
+  
+  password.value="";
+    
+  });
